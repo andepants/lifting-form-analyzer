@@ -70,6 +70,7 @@ const RecordScreen = () => {
         device={backCamera}
         isActive={true}
         ref={cameraRef}
+        video={true}
       />
       <Button
         title={recording ? "Stop Recording" : "Start Recording"}
