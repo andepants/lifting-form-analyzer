@@ -14,14 +14,20 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.andrewheim.liftingformanalyzer"
+      "bundleIdentifier": "com.andrewheim.liftingformanalyzer",
+      "infoPlist": {
+        "NSCameraUsageDescription": "We need access to your camera to take photos and videos."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.andrewheim.liftingformanalyzer"
+      "package": "com.andrewheim.liftingformanalyzer",
+      "permissions": [
+        "CAMERA"
+      ]
     },
     "web": {
       "bundler": "metro",
